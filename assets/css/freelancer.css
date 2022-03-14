@@ -1,3 +1,8 @@
+*, body {
+    -webkit-mask-image: none!important;
+    -webkit-mask-position: bottom!important;
+}
+
 .main-header .logo {
     position: absolute;
     left: auto;
@@ -689,10 +694,10 @@ select.sortby-select.select2-offscreen {
     }
 
     .features-section.slider .feature-block {
-        margin: auto;
+        /* margin: auto;
         background: #ffffffb5;
         box-shadow: 12px 19px 24px 28px #c6f1f5ba;
-        border-radius: 9rem 9rem 0 0;
+        border-radius: 9rem 9rem 0 0; */
     }
 
     .contact-section {
@@ -702,7 +707,7 @@ select.sortby-select.select2-offscreen {
     .features-section.slider {
         position: relative;
         overflow: hidden;
-        padding: 1rem 0 5rem;
+        padding: 1rem 0 0rem;
         z-index: 2;
     }
 
@@ -740,7 +745,7 @@ select.sortby-select.select2-offscreen {
         }
     }
     section.page-index.index {
-        background-image: url(../images/gallery/a.jpg);
+        background-image: url(../images/gallery/a1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -765,3 +770,169 @@ select.sortby-select.select2-offscreen {
     footer.main-footer .footer-bottom {
         background-color: #2f2725!important;
     }
+
+
+    section.page-index.index .features-section.slider .feature-block .slider{
+        width: auto;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .slides input{
+        display: none;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .slide{
+        width: 20%;
+        transition: 2s;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .slide img{
+        width: 800px;
+        height: 500px;
+      }
+      
+      /*css for manual slide navigation*/
+      
+      section.page-index.index .features-section.slider .feature-block .navigation-manual{
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .manual-btn{
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .manual-btn:not(:last-child){
+        margin-right: 40px;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .manual-btn:hover{
+        background: #40D3DC;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio1:checked ~ .first{
+        margin-left: 0;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio2:checked ~ .first{
+        margin-left: -20%;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio3:checked ~ .first{
+        margin-left: -40%;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio4:checked ~ .first{
+        margin-left: -60%;
+      }
+      
+      /*css for automatic navigation*/
+      
+      section.page-index.index .features-section.slider .feature-block .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-top: 460px;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .navigation-auto div{
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio1:checked ~ .navigation-auto .auto-btn1{
+        background: #40D3DC;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio2:checked ~ .navigation-auto .auto-btn2{
+        background: #40D3DC;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio3:checked ~ .navigation-auto .auto-btn3{
+        background: #40D3DC;
+      }
+      
+      section.page-index.index .features-section.slider .feature-block #radio4:checked ~ .navigation-auto .auto-btn4{
+        background: #40D3DC;
+      }
+      
+      section.page-index.index .img.slider.feature-block.col-lg-6.col-md-6.col-sm-12 {
+            margin: auto;
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+            /* clip-path: polygon(29% 0, 100% 0%, 100% 100%, 0% 100%); */
+    }
+
+     section.page-index.index .sec-title.text-center {
+        padding: 1rem 0 2rem;
+    }
+
+    section.page-index.index .sec-title.text-center {
+        position: relative;
+        text-align: left!important;
+    }
+
+    section.page-index.index .feature-block .inner-box {
+        position: relative;
+        text-align: left;
+    }
+
+    section.page-index.index .feature-block aside.sidebar.theiaStickySidebar {
+        position: relative;
+        text-align: left;
+        float: left;
+    }
+
+    section.page-index.index .sec-title .divider {
+        padding: 0px 45px 18px;
+    }
+
+    section.page-index.index {
+        -webkit-mask-image: url(../images/icons/shape_two.svg);
+        -webkit-mask-position: bottom;
+    }
+
+    section.page-index.index .img.slider.feature-block.col-lg-6.col-md-6.col-sm-12 .slide {
+        margin: 4rem 0;
+    }
+
+    section.page-index.index .img.slider.feature-block.col-lg-7.col-md-6.col-sm-12 {
+        margin: auto;
+        background: #dae9ee12;
+        box-shadow: 11px 16px 10px 65px #82cfd25e;
+        clip-path: polygon(-18% 0, 100% 0%, 100% 100%, 0% 100%);
+        padding: 3rem;
+    }
+
+    .call-to-action {
+        padding: 1rem;
+    }
+    .services-section {
+        padding: 2rem;
+    }
+    .features-section {
+        padding: 2rem;
+    }    

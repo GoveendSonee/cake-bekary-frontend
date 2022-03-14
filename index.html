@@ -24,7 +24,7 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-   
+
 </head>
 
 <body>
@@ -39,7 +39,8 @@
             <!-- Main box -->
             <div class="main-box">
                 <div class="menu-box">
-                    <div class="logo"><a href="index.html"><img src="assets/images/abccake.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="index.html"><img src="assets/images/abccake.png" alt="" title=""></a>
+                    </div>
 
                     <!--Nav Box-->
                     <div class="nav-outer clearfix">
@@ -65,7 +66,8 @@
                         <div class="outer-box clearfix">
 
                             <div class="cart-btn register">
-                                <a href=""><i class="icon flaticon-user"><img src="https://img.icons8.com/ios-filled/50/000000/user.png"/></i></a>
+                                <a href=""><i class="icon flaticon-user"><img
+                                            src="https://img.icons8.com/ios-filled/50/000000/user.png" /></i></a>
 
                                 <div class="shopping-cart">
                                     <ul class="shopping-cart-items">
@@ -129,7 +131,8 @@
 
             <!-- Mobile Header -->
             <div class="mobile-header">
-                <div class="logo"><a href="index.html"><img src="assets/images/abccake.png" style="height: 6rem;" alt="" title=""></a></div>
+                <div class="logo"><a href="index.html"><img src="assets/images/abccake.png" style="height: 6rem;" alt=""
+                            title=""></a></div>
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
@@ -165,7 +168,7 @@
         </header>
         <!--End Main Header -->
 
-        <!--Main Slider--> 
+        <!--Main Slider-->
         <section class="page-index index">
             <div class="auto-container">
                 <div class="sec-title text-center">
@@ -173,28 +176,85 @@
                         <div class="auto-container">
                             <div class="row">
                                 <!-- Feature Block -->
-                                <div class="slider feature-block col-lg-6 col-md-6 col-sm-12">
+                                <div class="slider feature-block col-lg-5 col-md-6 col-sm-12">
                                     <div class="sec-title text-center">
                                         <div class="divider"><img src="assets/images/icons/divider_1.png" alt=""></div>
                                         <h2>Need Cake?</h2>
                                     </div>
                                     <div class="inner-box">
                                         <h3>Cake For Your Celebration</h3>
-                                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Nam consectetur facilisis aliquet.
+                                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Nam consectetur
+                                            facilisis aliquet.
                                         </p>
                                         <aside class="sidebar theiaStickySidebar">
                                             <div class="sticky-sidebar">
                                                 <div class="sidebar-widget search-widget">
                                                     <form method="post" action="contact.html">
                                                         <div class="form-group">
-                                                            <input type="search" name="search-field" value="" placeholder="Search products…" required>
-                                                            <button type="submit"><span class=" fa fa-search"></span></button>
+                                                            <input type="search" name="search-field" value=""
+                                                                placeholder="Search products…" required>
+                                                            <button type="submit"><span
+                                                                    class=" fa fa-search"></span></button>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
                                         </aside>
                                     </div>
+                                </div>
+                                <div class="img slider feature-block col-lg-7 col-md-6 col-sm-12">
+                                    <!--image slider start-->
+                                    <div class="slider">
+                                        <div class="slides">
+                                            <!--radio buttons start-->
+                                            <input type="radio" name="radio-btn" id="radio1">
+                                            <input type="radio" name="radio-btn" id="radio2">
+                                            <input type="radio" name="radio-btn" id="radio3">
+                                            <input type="radio" name="radio-btn" id="radio4">
+                                            <!--radio buttons end-->
+                                            <!--slide images start-->
+                                            <div class="slide first">
+                                                <img src="assets/images/gallery/1.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="assets/images/gallery/2.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="assets/images/gallery/3.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="assets/images/gallery/4.jpg" alt="">
+                                            </div>
+                                            <!--slide images end-->
+                                            <!--automatic navigation start-->
+                                            <div class="navigation-auto">
+                                                <div class="auto-btn1"></div>
+                                                <div class="auto-btn2"></div>
+                                                <div class="auto-btn3"></div>
+                                                <div class="auto-btn4"></div>
+                                            </div>
+                                            <!--automatic navigation end-->
+                                        </div>
+                                        <!--manual navigation start-->
+                                        <div class="navigation-manual">
+                                            <label for="radio1" class="manual-btn"></label>
+                                            <label for="radio2" class="manual-btn"></label>
+                                            <label for="radio3" class="manual-btn"></label>
+                                            <label for="radio4" class="manual-btn"></label>
+                                        </div>
+                                        <!--manual navigation end-->
+                                    </div>
+                                    <!--image slider end-->
+                                    <script type="text/javascript">
+                                        var counter = 1;
+                                        setInterval(function () {
+                                            document.getElementById('radio' + counter).checked = true;
+                                            counter++;
+                                            if (counter > 4) {
+                                                counter = 1;
+                                            }
+                                        }, 5000);
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +263,6 @@
             </div>
         </section>
         <!--End Main Slider-->
-
 
         <!--Sidebar Page Container-->
         <div class="sidebar-page-container" style="padding: 35px 0 42px;">
@@ -217,183 +276,233 @@
                     <div class="content-side col-lg-12 col-md-12 col-sm-12">
                         <div class="our-shop">
                             <div class="row clearfix">
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
                                             <div class="sale-tag">sale!</div>
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/4.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/4.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Authentic Macaroons</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price"><del>$29.00</del> $25.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/8.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/8.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Birthday Cake</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$84.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/3.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/3.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Candy Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span
+                                                    class="fa fa-star light"></span><span
+                                                    class="fa fa-star light"></span><span
+                                                    class="fa fa-star light"></span></div>
                                             <div class="price">$15.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/10.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/10.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Classic Macaroon</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$22.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/10.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/10.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Coffee Cake</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span
+                                                    class="fa fa-star light"></span><span
+                                                    class="fa fa-star light"></span><span
+                                                    class="fa fa-star light"></span></div>
                                             <div class="price">$39.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
                                             <div class="sale-tag">sale!</div>
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/12.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/12.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">French Macaroon</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$17.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/12.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/12.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Happy Ninja</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$35.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/3.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/3.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Hearts Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$17.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/8.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/8.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Lemon Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$35.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/3.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/3.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Hearts Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$17.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Shop Item --> 
+                                <!-- Shop Item -->
                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/8.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/8.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Lemon Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$35.00</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                 <!-- Shop Item --> 
-                                 <div class="shop-item col-lg-3 col-md-4 col-sm-6">
+                                <!-- Shop Item -->
+                                <div class="shop-item col-lg-3 col-md-4 col-sm-6">
                                     <div class="inner-box">
                                         <div class="image-box">
-                                            <figure class="image"><a href="shop-single.html"><img src="assets/images/gallery/8.jpg" alt=""></a></figure>
+                                            <figure class="image"><a href="shop-single.html"><img
+                                                        src="assets/images/gallery/8.jpg" alt=""></a></figure>
                                             <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                         </div>
                                         <div class="lower-content">
                                             <h4 class="name"><a href="shop-single.html">Lemon Lollipop</a></h4>
-                                            <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
+                                            <div class="rating"><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                                    class="fa fa-star"></span><span class="fa fa-star light"></span>
+                                            </div>
                                             <div class="price">$35.00</div>
                                         </div>
                                     </div>
@@ -406,7 +515,7 @@
             </div>
         </div>
         <!--End Sidebar Page Container-->
-        
+
         <!-- Call to Action -->
         <section class="call-to-action">
             <div class="shape_wrapper shape_one">
@@ -432,19 +541,19 @@
                         molestie eu turpis nec<br> molestie. Nam auctor magna mauris, non lacinia felis mattis nec.</p>
                     <div class="row">
                         <div class="col-6">
-                        <div class="btn-box icons" style="float: right;">
-                            <i class="fas fa-shipping-fast"></i>
-                            <span>Home delivery</span>
-                        </div>
+                            <div class="btn-box icons" style="float: right;">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Home delivery</span>
+                            </div>
                         </div>
                         <div class="col-6">
-                        <div class="btn-box icons" style="float: left;">
-                            <i class="fas fa-dollar-sign"></i>
-                            <span>minimum order Rs.500 </span>
-                        </div>
+                            <div class="btn-box icons" style="float: left;">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>minimum order Rs.500 </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="btn-box" style="padding: 6rem 0 0 0;">
+                    <div class="btn-box" style="padding: 4rem 0 0 0;">
                         <a href="#" class="theme-btn btn-style-one large"><span></span>Discover More<span></span></a>
                     </div>
                 </div>
@@ -560,8 +669,8 @@
         </section>
         <!--End Projects Sections -->
 
-         <!-- Services Section -->
-         <section class="services-section">
+        <!-- Services Section -->
+        <section class="services-section">
             <div class="auto-container">
 
                 <div class="sec-title text-center">
@@ -583,7 +692,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-1.png" alt=""></figure>
                             </div>
                             <h3>Prashant Khadka</h3>
-                            <small><h6>Owner Themes</h6></small><br>
+                            <small>
+                                <h6>Owner Themes</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -602,7 +713,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-2.png" alt=""></figure>
                             </div>
                             <h3>Abhay Karki</h3>
-                            <small><h6>Manager And ED of Truebug Technology</h6></small><br>
+                            <small>
+                                <h6>Manager And ED of Truebug Technology</h6>
+                            </small><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
                     </div>
@@ -620,7 +733,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-3.png" alt=""></figure>
                             </div>
                             <h3>Goveend Sonee</h3>
-                            <small><h6>Developer</h6></small><br>
+                            <small>
+                                <h6>Developer</h6>
+                            </small><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
                     </div>
@@ -638,7 +753,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-4.png" alt=""></figure>
                             </div>
                             <h3>Rahul Mandal</h3>
-                            <small><h6>Developer</h6></small><br>
+                            <small>
+                                <h6>Developer</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -657,7 +774,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-1.png" alt=""></figure>
                             </div>
                             <h3>Mukesh Mandal</h3>
-                            <small><h6>Developer</h6></small><br>
+                            <small>
+                                <h6>Developer</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -676,7 +795,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-2.png" alt=""></figure>
                             </div>
                             <h3>Mahesh Babu</h3>
-                            <small><h6>Hero of Industry</h6></small><br>
+                            <small>
+                                <h6>Hero of Industry</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -695,7 +816,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-3.png" alt=""></figure>
                             </div>
                             <h3>Radha Singh</h3>
-                            <small><h6>House Wife</h6></small><br>
+                            <small>
+                                <h6>House Wife</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -714,7 +837,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-4.png" alt=""></figure>
                             </div>
                             <h3>Sima Mandal</h3>
-                            <small><h6>Owner of Bhaimandu</h6></small><br>
+                            <small>
+                                <h6>Owner of Bhaimandu</h6>
+                            </small><br>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
@@ -733,7 +858,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-1.png" alt=""></figure>
                             </div>
                             <h3>Roshani Sah</h3>
-                            <small><h6>Manager Bank of Nepal</h6></small><br>
+                            <small>
+                                <h6>Manager Bank of Nepal</h6>
+                            </small><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
                     </div>
@@ -751,7 +878,9 @@
                                 <figure class="image"><img src="assets/images/man/pic-2.png" alt=""></figure>
                             </div>
                             <h3>Aakriti Sah</h3>
-                            <small><h6>CEO Nepal Shop</h6></small><br>
+                            <small>
+                                <h6>CEO Nepal Shop</h6>
+                            </small><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                         </div>
                     </div>
@@ -913,10 +1042,11 @@
                                         <path
                                             d="M351.6,300.8c45.5,20.8,90.4,42.8,136.4,62.5c23,9.8,43.7,15,68.7,16.8c24.2,1.7,26.9-11.4,47.7-17.2 c36.4-10.2,50.6,30.7,12.4,39.4c-47,10.7-90.1,11.7-135.8-5.3c-43.6-16.2-84-40.4-125.5-61.1c-19.3-9.6-41-21.4-63.2-19.4 c-25.3,2.3-48.4,14.1-74.3,15.3c-33.4,1.5-101.6-4.4-107.8-47.3c-8-55.4,62.8-44,94.4-37.5c27.8,5.7,54.3,16.5,81.9,22 c27.9,5.7,49.2-4.2,74.5-15.3c49.2-21.6,108.5-37,152.6-67.4c-73-44.3-144.1-91.2-222.1-126.4c-68.4-30.9-157.2-64-226-12.7 c-11.1,8.3-20.3,19.6-26,32.2c-6.4,14-2.7,29.4-7.8,42.9C27.4,133.4,16,141,4.9,129.5c-10.1-10.4-2-33.4,2.1-44.6 C28.2,27.4,86.9,0.5,145,0c78.1-0.7,153.1,31.3,222.4,64.4c35.5,16.9,70.1,35.7,103.2,56.8c30.6,19.5,61.9,54.4,100.8,39.3 c68.6-26.4,131.4-75.9,210-57.7c57.6,13.4,99.3,84.7,40.5,125.7c-32.5,22.7-74.6,30.1-113.6,30c-42.6-0.1-77.9-19.1-117-32.7 c-41.5-14.4-84.9,10.2-124.1,24.2C448.9,256.6,351.9,281.1,351.6,300.8z M604.7,191.1c24.8,28.8,71.1,34.9,107.4,34.4 c31.8-0.4,94.3-7.9,110.4-41.2c23.9-49.5-49.1-56-77.9-51.8C695.1,139.9,649,169.4,604.7,191.1z M131.1,283.8 c25.5,27.4,91,30.7,122.6,7.1C212.6,263.8,153.1,259.8,131.1,283.8z">
                                         </path>
-                                    </svg> 
+                                    </svg>
                                 </div>
                                 <p class="paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit odio dolor incidunt sapiente impedit modi magnam quam omnis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit odio dolor
+                                    incidunt sapiente impedit modi magnam quam omnis.
                                 </p>
 
                             </div>
@@ -984,15 +1114,25 @@
                                         <path
                                             d="M351.6,300.8c45.5,20.8,90.4,42.8,136.4,62.5c23,9.8,43.7,15,68.7,16.8c24.2,1.7,26.9-11.4,47.7-17.2 c36.4-10.2,50.6,30.7,12.4,39.4c-47,10.7-90.1,11.7-135.8-5.3c-43.6-16.2-84-40.4-125.5-61.1c-19.3-9.6-41-21.4-63.2-19.4 c-25.3,2.3-48.4,14.1-74.3,15.3c-33.4,1.5-101.6-4.4-107.8-47.3c-8-55.4,62.8-44,94.4-37.5c27.8,5.7,54.3,16.5,81.9,22 c27.9,5.7,49.2-4.2,74.5-15.3c49.2-21.6,108.5-37,152.6-67.4c-73-44.3-144.1-91.2-222.1-126.4c-68.4-30.9-157.2-64-226-12.7 c-11.1,8.3-20.3,19.6-26,32.2c-6.4,14-2.7,29.4-7.8,42.9C27.4,133.4,16,141,4.9,129.5c-10.1-10.4-2-33.4,2.1-44.6 C28.2,27.4,86.9,0.5,145,0c78.1-0.7,153.1,31.3,222.4,64.4c35.5,16.9,70.1,35.7,103.2,56.8c30.6,19.5,61.9,54.4,100.8,39.3 c68.6-26.4,131.4-75.9,210-57.7c57.6,13.4,99.3,84.7,40.5,125.7c-32.5,22.7-74.6,30.1-113.6,30c-42.6-0.1-77.9-19.1-117-32.7 c-41.5-14.4-84.9,10.2-124.1,24.2C448.9,256.6,351.9,281.1,351.6,300.8z M604.7,191.1c24.8,28.8,71.1,34.9,107.4,34.4 c31.8-0.4,94.3-7.9,110.4-41.2c23.9-49.5-49.1-56-77.9-51.8C695.1,139.9,649,169.4,604.7,191.1z M131.1,283.8 c25.5,27.4,91,30.7,122.6,7.1C212.6,263.8,153.1,259.8,131.1,283.8z">
                                         </path>
-                                    </svg> 
+                                    </svg>
                                 </div>
                                 <ul class="footer">
                                     <div class="div">
-                                        <a href="#"><li class="footer">How To Order?</li></a>
-                                        <a href="#"><li class="footer">FAQ's</li></a>
-                                        <a href="#"><li class="footer">Blog</li></a>
-                                        <a href="#"><li class="footer">Delivery Charge</li></a>
-                                        <a href="#"><li class="footer">Available Area</li></a>
+                                        <a href="#">
+                                            <li class="footer">How To Order?</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="footer">FAQ's</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="footer">Blog</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="footer">Delivery Charge</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="footer">Available Area</li>
+                                        </a>
                                     </div>
                                 </ul>
                             </div>
